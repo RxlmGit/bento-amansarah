@@ -16,7 +16,7 @@ const BentoCat = () => {
     <div className=" min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50">
       <div className="mx-auto max-w-[1280px] min-h-[85vh] md:max-w-[1024px] lg:max-w-[1280px] grid grid-cols-12 grid-rows-12 gap-4 grid-flow-dense">
         <Block2 />
-        <Block3 />
+        <PromoBlock />
         <LinkBlock />
         <Block5 />
         <Block6 />
@@ -65,7 +65,7 @@ const Block2 = () => (
   </Block>
 );
 
-const Block3 = () => (
+const PromoBlock = () => (
   <Block className="col-span-6 row-span-3 md:col-span-4 md:row-span-3 bg-[#6D402B]">
     {" "}
     <h2>2 promos</h2>
