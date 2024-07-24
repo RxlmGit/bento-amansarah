@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { GrGallery } from "react-icons/gr";
 
-const BookingBlock = () => {
+const VideoGalleryBlock = () => {
   return (
     <motion.a
       href=""
@@ -23,14 +24,12 @@ const BookingBlock = () => {
         stiffness: 400,
         damping: 50,
       }}
-      className="rounded-lg border border-zinc-700 bg-zinc-800 col-span-3 
-      row-span-4 md:row-span-2 flex items-center justify-center "
+      className="rounded-lg border border-zinc-700 bg-zinc-800 col-span-7 row-span-4 md:col-span-6 md:row-span-6 flex items-center justify-center gap-2"
     >
-      <div className="m-4">
-        <h2>BOOK NOW</h2>
-      </div>
+      <h2>VIDEO GALLERY</h2>
+      <GrGallery />
     </motion.a>
   );
 };
 
-export default BookingBlock;
+export default VideoGalleryBlock;

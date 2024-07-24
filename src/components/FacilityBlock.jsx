@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const BookingBlock = () => {
+const FacilityBlock = () => {
   return (
     <motion.a
       href=""
@@ -23,14 +23,12 @@ const BookingBlock = () => {
         stiffness: 400,
         damping: 50,
       }}
-      className="rounded-lg border border-zinc-700 bg-zinc-800 col-span-3 
-      row-span-4 md:row-span-2 flex items-center justify-center "
+      className="rounded-lg border border-zinc-700 bg-zinc-800 col-span-5 
+      row-span-4 md:col-span-3 md:row-span-7 flex items-center justify-center gap-2"
     >
-      <div className="m-4">
-        <h2>BOOK NOW</h2>
-      </div>
+      <h2>FACILITIES</h2>
     </motion.a>
   );
 };
 
-export default BookingBlock;
+export default FacilityBlock;
