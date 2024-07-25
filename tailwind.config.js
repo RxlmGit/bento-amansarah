@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         offWhite: "rgba(250, 249, 246, 0.9)",
+        titleBlockBg: "rgba(206, 137, 45, 0.8)",
       },
 
       screens: {
@@ -21,6 +22,7 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        workSans: ["Work Sans", "sans-serif"],
       },
     },
   },

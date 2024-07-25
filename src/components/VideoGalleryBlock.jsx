@@ -17,6 +17,11 @@ const VideoGalleryBlock = () => {
           y: "0%",
           x: "0%",
         },
+        exit: {
+          scale: 0,
+          y: "0%",
+          x: "0%",
+        },
       }}
       transition={{
         type: "spring",

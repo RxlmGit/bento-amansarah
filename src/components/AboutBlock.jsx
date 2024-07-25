@@ -16,6 +16,11 @@ const AboutBlock = () => {
           y: "0%",
           x: "0%",
         },
+        exit: {
+          scale: 0,
+          y: "-50%",
+          x: "-50%",
+        },
       }}
       transition={{
         type: "spring",

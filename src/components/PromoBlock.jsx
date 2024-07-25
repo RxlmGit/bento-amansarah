@@ -1,10 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const PromoBlock = () => {
   return (
-    <motion.a
+    <motion.div
       variants={{
         initial: {
           scale: 0,
@@ -16,25 +17,38 @@ const PromoBlock = () => {
           y: "0%",
           x: "0%",
         },
+        exit: {
+          scale: 0,
+          y: "0%",
+          x: "0%",
+        },
       }}
       transition={{ type: "spring", mass: 3, stiffness: 400, damping: 50 }}
       href=""
-      className="col-span-6 row-span-3 md:col-span-4 md:row-span-3 bg-black border-zinc-800 p-4 rounded-lg w-full h-full relative overflow-hidden group"
+      className="col-span-6 row-span-3 md:col-span-4 md:row-span-3 "
     >
-      <div className="z-0 absolute inset-0 bg-zinc-800 translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-500 rounded-lg" />
-      <h2 className="z-50 relative text-2xl font-bold text-zinc-300 group-hover:text-zinc-50 font-poppins">
-        PROMOTIONS
-      </h2>
-      <p className="z-50 relative text-sm font-semibold text-zinc-500 mt-2">
+      {/* <div className="z-0 absolute inset-0 bg-zinc-800 translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-500 rounded-lg" /> */}
+
+      <Link
+        to="/promopage"
+        className="border bg-zinc-800  border-zinc-700 p-4 rounded-lg w-full h-full relative overflow-hidden group flex items-center justify-center"
+      >
+        {" "}
+        <h2 className="z-50 relative group-hover:text-zinc-50 font-workSans">
+          PROMOTIONS
+        </h2>
+      </Link>
+
+      {/* <p className="z-50 relative text-sm font-semibold text-zinc-500 mt-2">
         Check out our current promotions! follow our socials to stay updated.
-      </p>
-      <div
+      </p> */}
+      {/* <div
         className="mt-2 mr-2 flex justify-end relative text-xl z-50 
       scale-0 group-hover:scale-100 duration-500"
       >
         <FaArrowRight />
-      </div>
-    </motion.a>
+      </div> */}
+    </motion.div>
   );
 };
 

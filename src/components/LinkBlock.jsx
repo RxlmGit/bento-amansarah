@@ -16,6 +16,11 @@ const LinkBlock = () => {
           y: "0%",
           x: "0%",
         },
+        exit: {
+          scale: 0,
+          y: "0%",
+          x: "0%",
+        },
       }}
       transition={{
         type: "spring",
@@ -23,7 +28,7 @@ const LinkBlock = () => {
         stiffness: 400,
         damping: 50,
       }}
-      className="rounded-lg border border-zinc-700 bg-zinc-800 col-span-6 row-span-3 md:col-span-3 md:row-span-5 p-6 bg-transparent"
+      className="rounded-lg border border-zinc-700 bg-transparent col-span-6 row-span-3 md:col-span-3 md:row-span-5 p-6"
     >
       <div className="grid grid-rows-2 grid-cols-2 w-full h-full gap-3 text-xl">
         <a href="#">

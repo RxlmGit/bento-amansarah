@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import PromoBlock from "./PromoBlock";
 import TitleBlock from "./TitleBlock";
@@ -12,14 +12,15 @@ import FacilityBlock from "./FacilityBlock";
 
 const BentoCat = () => {
   return (
-    <div className=" min-h-screen bg-zinc-900 px-4 py-12">
+    <div className="min-h-screen bg-zinc-900 px-4 py-12 overflow-hidden">
       <motion.div
         initial="initial"
         animate="animate"
+        exit="exit"
         transition={{
-          staggerChildren: 0.5,
+          staggerChildren: 0.2,
         }}
-        className="mx-auto max-w-[1350px] min-h-[85vh] md:max-w-[980px] lg:max-w-[1100px] lg:max-h-[630px] grid grid-cols-12 grid-rows-12 gap-4 grid-flow-dense text-zinc-50"
+        className="mx-auto max-w-[1350px] min-h-[85vh] md:max-w-[980px] lg:max-w-[1100px] lg:max-h-[630px] grid grid-cols-12 grid-rows-12 gap-4 grid-flow-dense text-zinc-50 "
       >
         <TitleBlock />
         <PromoBlock />

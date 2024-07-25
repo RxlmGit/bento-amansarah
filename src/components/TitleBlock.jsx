@@ -17,6 +17,11 @@ const TitleBlock = () => {
           y: "0%",
           x: "0%",
         },
+        exit: {
+          scale: 0,
+          y: "0%",
+          x: "0%",
+        },
       }}
       transition={{
         type: "spring",
@@ -24,7 +29,7 @@ const TitleBlock = () => {
         stiffness: 400,
         damping: 50,
       }}
-      className="border-zinc-700 bg-zinc-800 rounded-lg border col-span-12 row-span-3 md:col-span-8 md:row-span-3 flex items-center justify-center gap-2"
+      className="border-zinc-700 bg-titleBlockBg rounded-lg border col-span-12 row-span-3 md:col-span-8 md:row-span-3 flex items-center justify-center gap-2"
     >
       <h1 className="font-poppins text-5xl font-bold ">AMANSARAH</h1>
       <div className="text-6xl font-extrabold text-yellow-300">

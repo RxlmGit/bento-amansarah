@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { TfiArrowCircleRight } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 const BookingBlock = () => {
   return (
-    <motion.a
-      href=""
+    <motion.div
       variants={{
         initial: {
           scale: 0,
@@ -16,6 +17,11 @@ const BookingBlock = () => {
           y: "0%",
           x: "0%",
         },
+        exit: {
+          scale: 0,
+          y: "0%",
+          x: "0%",
+        },
       }}
       transition={{
         type: "spring",
@@ -23,13 +29,17 @@ const BookingBlock = () => {
         stiffness: 400,
         damping: 50,
       }}
-      className="rounded-lg border border-zinc-700 bg-zinc-800 col-span-3 
-      row-span-4 md:row-span-2 flex items-center justify-center "
+      className="col-span-3 
+      row-span-4 md:row-span-2"
     >
-      <div className="m-4">
-        <h2>BOOK NOW</h2>
-      </div>
-    </motion.a>
+      <Link
+        to="/promopage"
+        className=" rounded-lg border border-zinc-700 bg-zinc-800 flex items-center justify-center gap-2 w-full h-full"
+      >
+        <h2 className="">BOOK NOW</h2>
+        <TfiArrowCircleRight />
+      </Link>
+    </motion.div>
   );
 };
 
