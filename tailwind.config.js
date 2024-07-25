@@ -6,6 +6,11 @@ export default {
       colors: {
         offWhite: "rgba(250, 249, 246, 0.9)",
         titleBlockBg: "rgba(206, 137, 45, 0.8)",
+
+        bookingPageBG: "rgba(49, 40, 35, 1)",
+        bookingCard1: "rgba(252, 247, 241, 1)",
+        bookingCard2: "rgba(255, 200, 61, 1)",
+        bookingCard3: "rgba(238, 214, 178, 1)",
       },
 
       screens: {
@@ -23,6 +28,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         workSans: ["Work Sans", "sans-serif"],
+        cooperHeavy: ["CooperHewittHeavy", "sans-serif"],
       },
     },
   },

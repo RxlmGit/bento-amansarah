@@ -10,7 +10,7 @@ const VideoGalleryBlock = () => {
         initial: {
           scale: 0,
           y: "-50%",
-          x: "-50%",
+          x: "0%",
         },
         animate: {
           scale: 1,
@@ -21,6 +21,7 @@ const VideoGalleryBlock = () => {
           scale: 0,
           y: "0%",
           x: "0%",
+          rotate: "-360deg",
         },
       }}
       transition={{

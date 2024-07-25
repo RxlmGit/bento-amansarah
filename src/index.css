@@ -7,25 +7,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "satoshiblack";
-  src: url("satoshi-black-webfont.woff2") format("woff2"),
-    url("satoshi-black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "satoshibold";
-  src: url("satoshi-bold-webfont.woff2") format("woff2"),
-    url("satoshi-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "satoshimedium";
-  src: url("satoshi-medium-webfont.woff2") format("woff2"),
-    url("satoshi-medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "CooperHewittHeavy";
+  src: url("/src/assets/fonts/CooperHewitt-Heavy.otf") format("oft");
 }

@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FaBackward } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+const BookingCard = ({}) => <div></div>;
+
 const PromoPage = () => {
   return (
     <div className="min-h-screen bg-zinc-900 px-4 py-12">
@@ -24,15 +26,11 @@ const PromoPage = () => {
           x: "0%",
         }}
         transition={{ type: "spring", mass: 3, stiffness: 400, damping: 50 }}
-        className="mx-auto max-w-[1350px] min-h-[85vh] md:max-w-[980px] lg:max-w-[1100px] lg:max-h-[630px] rounded-lg border border-zinc-700 bg-zinc-800 grid place-content-center text-zinc-50 gap-5"
+        className="mx-auto max-w-[1350px] min-h-[85vh] md:max-w-[980px] lg:max-w-[90vw] lg:max-h-[630px] rounded-lg bg-bookingPageBG  text-zinc-50 flex flex-col md:flex-row items-center justify-around"
       >
-        <h1>PROMOTIONS PAGE</h1>
-        <Link
-          to={"/"}
-          className="flex items-center justify-center rounded-lg text-xl border border-zinc-700 bg-zinc-800 py-3"
-        >
-          <FaBackward />
-        </Link>
+        {bookingPageConstants.map((bookingConstant, index) => (
+          <BookingCard key={bookingPageConstants.id} />
+        ))}
       </motion.div>
     </div>
   );
