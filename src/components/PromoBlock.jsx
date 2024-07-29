@@ -29,15 +29,17 @@ const PromoBlock = () => {
     >
       {/* <div className="z-0 absolute inset-0 bg-zinc-800 translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-500 rounded-lg" /> */}
 
-      <Link
-        to="/promopage"
-        className="border bg-zinc-800  border-zinc-700 p-4 rounded-lg w-full h-full relative overflow-hidden group flex items-center justify-center"
-      >
-        {" "}
-        <h2 className="z-50 relative group-hover:text-zinc-50 font-workSans">
-          PROMOTIONS
-        </h2>
-      </Link>
+      <AnimatePresence>
+        <Link
+          to="/promopage"
+          className="border bg-zinc-800  border-zinc-700 p-4 rounded-lg w-full h-full relative overflow-hidden group flex items-center justify-center"
+        >
+          {" "}
+          <h2 className="z-50 relative group-hover:text-zinc-50 font-workSans">
+            PROMOTIONS
+          </h2>
+        </Link>
+      </AnimatePresence>
 
       {/* <p className="z-50 relative text-sm font-semibold text-zinc-500 mt-2">
         Check out our current promotions! follow our socials to stay updated.

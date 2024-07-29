@@ -31,7 +31,7 @@ const AboutBlock = () => {
       className="rounded-lg border border-zinc-700 bg-zinc-800 col-span-6 
       row-span-4 md:row-span-3 flex items-center justify-center gap-2"
     >
-      <h2>VIDEO GALLERY</h2>
+      <h2>MORE ABOUT US</h2>
     </motion.a>
   );
 };

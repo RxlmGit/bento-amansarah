@@ -1,0 +1,48 @@
+/* xxs */
+@media (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1340px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1736px) {
+  .container {
+    max-width: 1736px;
+  }
+}
