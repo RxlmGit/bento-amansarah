@@ -13,19 +13,8 @@ const PromoCard1 = () => {
         scale: 1.05,
         backgroundColor: "rgba(252, 247, 241, 1)",
       }}
-      initial={{
-        opacity: 0,
-        scale: 0,
-      }}
-      animate={{
-        opacity: 1,
-        scale: 1,
-      }}
-      exit={{
-        opacity: 0,
-        scale: 0,
-        y: "0%",
-        x: "0%",
+      whileTap={{
+        scale: 0.9,
       }}
       className=" bg-bookingCard1 rounded-lg text-black p-8 flex 
     flex-col justify-between  "

@@ -7,7 +7,7 @@ export default {
         offWhite: "rgba(250, 249, 246, 0.9)",
         titleBlockBg: "rgba(206, 137, 45, 0.8)",
 
-        bookingPageBG: "rgb(199, 198, 194)",
+        bookingPageBG: "rgb(21, 21, 21)",
         bookingCard1: "rgba(252, 247, 241, 0.9)",
         bookingCard2: "rgba(255, 200, 61, 0.9)",
         bookingCard3: "rgba(238, 214, 178, 0.9)",
