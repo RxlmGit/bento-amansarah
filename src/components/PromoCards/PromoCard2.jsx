@@ -13,6 +13,9 @@ const PromoCard2 = () => {
         scale: 1.05,
         backgroundColor: "rgba(255, 200, 61, 1)",
       }}
+      whileTap={{
+        scale: 0.9,
+      }}
       className=" bg-bookingCard2 rounded-lg text-black p-8 flex 
 flex-col justify-between "
     >
