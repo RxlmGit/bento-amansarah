@@ -1,6 +1,5 @@
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 import PromoBlock from "./PromoBlock";
 import TitleBlock from "./TitleBlock";
 import LocationBlock from "./LocationBlock";
@@ -9,10 +8,22 @@ import LinkBlock from "./LinkBlock";
 import VideoGalleryBlock from "./VideoGalleryBlock";
 import AboutBlock from "./AboutBlock";
 import FacilityBlock from "./FacilityBlock";
+import splitDisclaimer from "../utils/DisclamerRevealAnim";
+
+const disclaimerText =
+  "Disclaimer: This website is by no means official and is only a content website featuring the business.";
+
+const charVariants = {
+  hidden: { opacity: 0 },
+  reveal: { opacity: 1 },
+};
 
 const BentoCat = () => {
+  const textChars = splitDisclaimer(disclaimerText);
+
+  console.log(textChars);
   return (
-    <div className="min-h-screen bg-zinc-900 px-4 py-12 overflow-hidden">
+    <div className="min-h-screen bg-zinc-900 px-4 py-12 overflow-hidden relative">
       <motion.div
         initial="initial"
         animate="animate"
@@ -31,6 +42,25 @@ const BentoCat = () => {
         <AboutBlock />
         <BookingBlock />
       </motion.div>
+
+      <motion.p
+        initial="hidden"
+        whileInView="reveal"
+        transition={{ staggerChildren: 0.02 }}
+        className="absolute left-0 right-0 bottom-4 ml-auto mr-auto w-full text-sm text-center text-yellow-300"
+      >
+        {textChars.map((char) => (
+          <motion.span
+            key={char}
+            transition={{
+              duration: 0.35,
+            }}
+            variants={charVariants}
+          >
+            {char}
+          </motion.span>
+        ))}
+      </motion.p>
     </div>
   );
 };

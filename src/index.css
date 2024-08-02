@@ -6,6 +6,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
 @font-face {
   font-family: "CooperHewittHeavy";
   src: url("/src/assets/fonts/CooperHewitt-Heavy.otf") format("oft");

@@ -60,6 +60,9 @@ const LinkBlock = () => {
               rotate: "2.5deg",
               scale: 1.2,
             }}
+            whileTap={{
+              scale: 0.8,
+            }}
             className={
               "bg-white text-black grid min-h-full place-content-center rounded-lg"
             }
@@ -73,6 +76,9 @@ const LinkBlock = () => {
               rotate: "-2.5deg",
               scale: 1.2,
             }}
+            whileTap={{
+              scale: 0.8,
+            }}
             className={
               "bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] grid min-h-full place-content-center rounded-lg"
             }
@@ -85,6 +91,9 @@ const LinkBlock = () => {
             whileHover={{
               rotate: "2.5deg",
               scale: 1.2,
+            }}
+            whileTap={{
+              scale: 0.8,
             }}
             className={
               "bg-[#FF0000] grid min-h-full place-content-center rounded-lg"

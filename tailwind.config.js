@@ -3,8 +3,43 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      animation: {
+        blob: "blob 7s infinite",
+        side: "side 16s infinite",
+      },
+      keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "35%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        side: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "35%": {
+            transform: "translate(200px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-200px, 50px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+      },
       colors: {
         offWhite: "rgba(250, 249, 246, 0.9)",
+        offWhite2: "rgba(250, 249, 246, 0.3)",
         titleBlockBg: "rgba(206, 137, 45, 0.8)",
 
         bookingPageBG: "rgb(21, 21, 21)",
