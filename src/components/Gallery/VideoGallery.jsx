@@ -100,7 +100,7 @@ const VideoGallery = () => {
             transition={{
               duration: 1.1,
             }}
-            className="absolute right-0 text-3xl"
+            className="absolute right-0 text-3xl z-50"
           >
             <Link to="/">
               <FiArrowLeftCircle />

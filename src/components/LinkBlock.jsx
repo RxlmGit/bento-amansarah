@@ -4,7 +4,7 @@ import { SiFacebook, SiInstagram, SiTiktok, SiYoutube } from "react-icons/si";
 
 const LinkBlock = () => {
   return (
-    <motion.a
+    <motion.div
       variants={{
         initial: {
           scale: 0,
@@ -103,7 +103,7 @@ const LinkBlock = () => {
           </motion.div>
         </a>
       </div>
-    </motion.a>
+    </motion.div>
   );
 };
 

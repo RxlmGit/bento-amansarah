@@ -49,9 +49,9 @@ const BentoCat = () => {
         transition={{ staggerChildren: 0.02 }}
         className="absolute left-0 right-0 bottom-4 ml-auto mr-auto w-full text-sm text-center text-yellow-300"
       >
-        {textChars.map((char) => (
+        {textChars.map((char, idx) => (
           <motion.span
-            key={char}
+            key={idx}
             transition={{
               duration: 0.35,
             }}
